@@ -1,0 +1,17 @@
+// {
+//     "compile-hero.disable-compile-files-on-did-save-code": false
+// }
+
+{
+"version": "2.0.0",
+"tasks": [
+
+{
+    "taskName": "echo",
+    "type": "shell",
+    "command": "node-sass styles.scss styles.css",
+    "group": "build"
+
+}
+]
+}
