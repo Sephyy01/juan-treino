@@ -4,10 +4,11 @@
 }
 
 body {
+  border-radius: 10px;
   padding: 0;
   margin: 0;
   font-family: "inter", sans-serif;
-  background: linear-gradient(45deg, #fff, #40CE94);
+  background: linear-gradient(45deg, black, #333);
   padding: 40px;
 }
 
@@ -30,6 +31,7 @@ body {
 .login-right {
   background-color: #eee;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .login-right img {
@@ -69,7 +71,7 @@ body {
   justify-content: center;
   display: flex;
   align-items: center;
-  color: black;
+  color: rgb(218, 33, 218);
   text-decoration: none;
 }
 .login-form-footer a:hover {
@@ -110,10 +112,10 @@ input[type=checkbox] {
   accent-color: #40CE94;
 }
 
-button {
+a {
   border: nome;
-  background-color: #40CE94;
-  color: white;
+  background-color: rgb(67, 69, 70);
+  color: #0e067c;
   padding: 1rem;
   border-radius: 100px;
   text-align: center;
@@ -121,6 +123,69 @@ button {
   font-size: 18px;
   height: 55px;
   cursor: pointer;
+}
+
+.quadrado {
+  border-radius: 50%;
+  padding-top: 30px;
+  justify-content: space-around;
+  background: #0e1110;
+  width: 150px;
+  height: 150px;
+}
+.quadrado.primeiro {
+  background-color: blue;
+  -webkit-animation: go-back 4s infinite alternate;
+          animation: go-back 4s infinite alternate;
+}
+.quadrado.segundo {
+  background-color: red;
+  -webkit-animation: go-back 4.2s infinite alternate;
+          animation: go-back 4.2s infinite alternate;
+}
+.quadrado.terceiro {
+  background-color: black;
+  -webkit-animation: go-back 4.3s infinite alternate;
+          animation: go-back 4.3s infinite alternate;
+}
+.quadrado.quarto {
+  background-color: rgb(219, 16, 101);
+  -webkit-animation: go-back 4.4s infinite alternate;
+          animation: go-back 4.4s infinite alternate;
+}
+.quadrado.quinto {
+  background-color: rgb(15, 185, 197);
+  -webkit-animation: go-back 4.5s infinite alternate;
+          animation: go-back 4.5s infinite alternate;
+}
+.quadrado.sexto {
+  background-color: rgb(216, 155, 23);
+  -webkit-animation: go-back 4.6s infinite alternate;
+          animation: go-back 4.6s infinite alternate;
+}
+
+@-webkit-keyframes go-back {
+  from {
+    transform: translateX(780px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes go-back {
+  from {
+    transform: translateX(780px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.nome {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
 }
 
 /* responsive */
@@ -146,4 +211,4 @@ button {
   .login-right {
     display: none !important;
   }
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=login.css.map */

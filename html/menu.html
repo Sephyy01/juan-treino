@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Treino</title>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container_box">
+            <div class="header">
+                <button onclick="sidebar()">On/Off</button>
+            </div>
+
+            <div class="sidebar" id="sidebar">
+                <a href="">Inicio</a>
+                <a href="">Perfil</a>
+                <a href="../html/login.html">Sair</a>
+            </div>
+
+            <main>?</main>
+
+            <div class="footer"><strong>FOOTER</strong></div>
+
+
+    </div>
+
+
+    <script>
+        function sidebar() {
+    var x = document.getElementById("sidebar");
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+    } else {
+      x.style.display = "none";
+    }
+  }
+    </script>
+    
+</body>
+</html>

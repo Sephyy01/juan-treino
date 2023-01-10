@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=inter:wght@300;600&display=swap");
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    font-family: "inter", sans-serif;
+    background: #cecece;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.container{
+    min-height: 100vh;
+    display: grid;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.container_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px;
+    background-color: white;
+}
+
+.header {
+    display: block;
+    position: fixed;
+    height: 62px;
+    border: 1px solid #cecece;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    text-align: left;
+    padding: 20px 0;
+    z-index: 2;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: #40CE94;
+    position: fixed;
+    height: 100vh;
+    padding: 62px 0;
+    top: 0px;
+    left: 0;
+    width: 100px;
+    // z-index: 999;
+}
+
+.sidebar a{
+
+    justify-content: center;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    width: 100%;
+    background: #ddd;
+    color: black;
+}
+
+.footer{
+    display:block;
+    position:fixed;
+    border: 1px solid #cecece;
+    width:100%;
+    height: 62px;
+    bottom:0vh;
+    left:0;
+    background: white;
+    text-align:center;
+    padding: 20px 0;
+    z-index: 2;
+  }
+
+  .pessoal {
+    justify-content: center;
+    border: 3px solid #333;
+    width: 50px;
+    height: 50px;
+  }
+
+button {
+    justify-content: center;
+    float: left;
+    display: block;
+    color: white;
+    background-color: #40CE94;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    height: 20px;
+    border-radius: 30px;
+    
+}
+
+button:hover {
+    width: 5%;
+    background: #40CE94;
+    color: black;
+}
